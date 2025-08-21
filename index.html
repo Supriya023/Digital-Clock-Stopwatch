@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Digital Clock & Stopwatch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>⏰ Digital Clock & Stopwatch</h1>
+
+    <!-- Clock Section -->
+    <div class="section">
+      <h2>Digital Clock</h2>
+      <div id="clock" class="display">00:00:00</div>
+      <div>
+        <input type="time" id="alarmTime">
+        <button onclick="setAlarm()">Set Alarm</button>
+        <button onclick="clearAlarm()">Clear Alarm</button>
+      </div>
+      <p id="alarmStatus"></p>
+    </div>
+
+    <!-- Stopwatch Section -->
+    <div class="section">
+      <h2>Stopwatch</h2>
+      <div id="stopwatch" class="display">00:00:00</div>
+      <div>
+        <button onclick="startStopwatch()">Start</button>
+        <button onclick="pauseStopwatch()">Pause</button>
+        <button onclick="resetStopwatch()">Reset</button>
+        <button onclick="lap()">Lap</button>
+      </div>
+      <ul id="laps"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
